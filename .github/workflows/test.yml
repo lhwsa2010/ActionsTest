@@ -1,12 +1,10 @@
 name: dotnet package test
 
-on:
-  push:
-    branches:
-      -main
+on: [push]
+
 jobs:
   build:
-  
+
     runs-on: [windows-latest,linux]
     strategy:
       matrix:
