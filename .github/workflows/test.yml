@@ -11,11 +11,11 @@ jobs:
       matrix:
         dotnet-version: ['3.0','3.1.x','5.0.x']
     
-    steps:
-      -uses: actions/checkout@v2
-      -name: Setup .NET Core SDK ${{matrix.dotnet-version}}
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: ${{matrix.dotnet-version}}
-      -name: Display dotnet version
-      run: dotnet --version
+      steps:
+      - uses: actions/checkout@v2
+      - name: Setup .NET Core SDK ${{matrix.dotnet-version}}
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: ${{matrix.dotnet-version}}
+      - name: Display dotnet version
+        run: dotnet --version
