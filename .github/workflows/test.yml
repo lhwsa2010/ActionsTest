@@ -12,7 +12,7 @@ jobs:
         dotnet-version: ['3.0','3.1.x','5.0.x']
     
     steps:
-#      -uses:''
+      -uses: actions/checkout@v2
       -name: Setup .NET Core SDK ${{matrix.dotnet-version}}
 #      uses:
       with:
