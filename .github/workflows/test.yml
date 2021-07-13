@@ -15,5 +15,5 @@ jobs:
         run: dotnet --version
       - name: Install dependencies
         run: dotnet restore
-      -name: Build
+      - name: Build
         run: dotnet build
