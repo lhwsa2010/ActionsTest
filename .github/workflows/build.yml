@@ -1,6 +1,6 @@
 # 代码检查
 
-name: 代码检查
+name: build
 
 on:
   push:
