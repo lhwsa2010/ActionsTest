@@ -1,4 +1,4 @@
-# DotNet (https://github.com/lhwsa2010/DotNet/actions/workflows/test.yml/badge.svg?branch=master)
+# DotNet ![Build Status](https://github.com/lhwsa2010/DotNet/actions/workflows/test.yml/badge.svg?branch=master)
 ![Build Status](https://github.com/lhwsa2010/DotNet/actions/workflows/test.yml/badge.svg)
 
 ![Build branch parameter](https://github.com/lhwsa2010/DotNet/actions/workflows/test.yml/badge.svg?branch=master)
