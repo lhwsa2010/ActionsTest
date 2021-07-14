@@ -1,8 +1,9 @@
 name: build
 
-on: [push]
-  branches-ignore:
-    - release
+on:
+  push:
+    branches-ignore:
+      - release
 
 jobs:
   build:
