@@ -7,9 +7,7 @@ on:
     types: [published]
 
 jobs:
-  publish:
-    runs-on: ubuntu-latest
-
+  build:
     steps:
       - uses: actions/checkout@v2
       - name: Display dotnet version
@@ -20,6 +18,21 @@ jobs:
         run: dotnet build --configuration Release
       - name: Create the package
         run: dotnet pack --configuration Release
+
+  publish:
+    needs: [build]
+    runs-on: ubuntu-latest
+
+    steps:
+      # - uses: actions/checkout@v2
+      # - name: Display dotnet version
+      #   run: dotnet --version
+      # - name: Install dependencies
+      #   run: dotnet restore
+      # - name: Build
+      #   run: dotnet build --configuration Release
+      # - name: Create the package
+      #   run: dotnet pack --configuration Release
       - name: Publish the package to GPR
         id: publish_nuget
         uses: rohith/publish-nuget@v2.5.5
