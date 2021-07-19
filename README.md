@@ -10,3 +10,4 @@
 ![Build Status](https://github.com/lhwsa2010/ActionsTest/actions/workflows/release.yml/badge.svg)
 
 
+[![release](https://github.com/lhwsa2010/ActionsTest/actions/workflows/release.yml/badge.svg?branch=v0.0.1)](https://github.com/lhwsa2010/ActionsTest/actions/workflows/release.yml)
