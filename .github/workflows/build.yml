@@ -11,7 +11,7 @@ on:
     - '**.csproj'
     branches-ignore:
       - release
-    tags:
+    tags-ignore:
       - 'v*'
 
 jobs:
