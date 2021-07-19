@@ -7,6 +7,10 @@ on:
     paths:
     - '**.cs'
     - '**.csproj'
+    paths-ignore:
+    - '*.md'
+    - '.github/workflows/**.'
+    - LICENSE
     branches-ignore:
       - release
     tags-ignore:
