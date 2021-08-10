@@ -49,8 +49,8 @@ jobs:
         id: prep
         run: |
           VERSION=${{github.event.release.tag_name}}
-          echo VERSION
-          ver=$(echo $VERSION | sed -e 's/^v//'
+          echo $VERSION
+          ver=$(echo $VERSION | sed -e 's/^v//')
           echo ver
           echo ::set-output name=version::$ver
       - name: LA Test
