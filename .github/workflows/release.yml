@@ -21,6 +21,7 @@ jobs:
       - name: Create the package
         run: dotnet pack --configuration Release
 
+  
   publish:
     needs: [build]
     runs-on: ubuntu-latest
@@ -44,5 +45,8 @@ jobs:
         #   NUGET_SOURCE: https://api.nuget.org/
         #   TAG_FORMAT: v*
         #   PACKAGE_NAME: DotNetFool-${{github.event.release.tag_name}}
+      - name: prepname
+        id: prep
+        run:  echo ::set-output name=version::${{github.event.release.tag_name}}
       - name: LA Test
-        run: echo ${{github.event.release.tag_name}}
+        run: echo ${{steps.prep.outputs.version}}
